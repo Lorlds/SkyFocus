@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SkyFocus.csproj" />
+  <Project Path="SkyFocus.Tests/SkyFocus.Tests.csproj" />
+</Solution>

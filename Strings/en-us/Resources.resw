@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value></resheader>
+
+  <data name="AppDisplayName" xml:space="preserve"><value>SkyFocus</value></data>
+  <data name="HeaderHomeTitle" xml:space="preserve"><value>Flight Deck</value></data>
+  <data name="HeaderHomeSubtitle" xml:space="preserve"><value>Check your momentum, route mix, and the badge you are flying toward.</value></data>
+  <data name="HeaderFocusTitle" xml:space="preserve"><value>Active Route</value></data>
+  <data name="HeaderFocusSubtitle" xml:space="preserve"><value>Launch a focus session, hold course, and land with a clean finish.</value></data>
+  <data name="HeaderHistoryTitle" xml:space="preserve"><value>Flight Log</value></data>
+  <data name="HeaderHistorySubtitle" xml:space="preserve"><value>Review your last week of routes, completion rate, and recent landings.</value></data>
+  <data name="HeaderSoundsTitle" xml:space="preserve"><value>Cabin Audio</value></data>
+  <data name="HeaderSoundsSubtitle" xml:space="preserve"><value>Pick a cabin texture that keeps your head down and your mind steady.</value></data>
+  <data name="HeaderSettingsTitle" xml:space="preserve"><value>Control Tower</value></data>
+  <data name="HeaderSettingsSubtitle" xml:space="preserve"><value>Adjust shields, alerts, and default timing before the next departure.</value></data>
+
+  <data name="NavHomeAutomationName" xml:space="preserve"><value>Open home dashboard</value></data>
+  <data name="NavFocusAutomationName" xml:space="preserve"><value>Open focus route page</value></data>
+  <data name="NavHistoryAutomationName" xml:space="preserve"><value>Open focus history</value></data>
+  <data name="NavSoundsAutomationName" xml:space="preserve"><value>Open ambient sounds</value></data>
+  <data name="NavSettingsAutomationName" xml:space="preserve"><value>Open settings</value></data>
+
+  <data name="HomeNavItem.Content" xml:space="preserve"><value>Home</value></data>
+  <data name="FocusNavItem.Content" xml:space="preserve"><value>Focus</value></data>
+  <data name="HistoryNavItem.Content" xml:space="preserve"><value>History</value></data>
+  <data name="SoundsNavItem.Content" xml:space="preserve"><value>Sounds</value></data>
+  <data name="SettingsNavItem.Content" xml:space="preserve"><value>Settings</value></data>
+
+  <data name="ShieldReturnActionLabel" xml:space="preserve"><value>Return to session</value></data>
+  <data name="ShieldDismissActionLabel" xml:space="preserve"><value>Dismiss shield</value></data>
+  <data name="ShieldNavigationHeadline" xml:space="preserve"><value>Stay on the active route</value></data>
+  <data name="ShieldNavigationMessageFormat" xml:space="preserve"><value>{0} is still in the air. Return to the focus page to keep your route intact.</value></data>
+  <data name="ShieldReturnHeadline" xml:space="preserve"><value>We noticed you drifted away</value></data>
+  <data name="ShieldReturnMessageFormat" xml:space="preserve"><value>{0} is still running. Return now to preserve the cleanest landing.</value></data>
+  <data name="ShieldReturnButton.Content" xml:space="preserve"><value>Resume route</value></data>
+  <data name="ShieldDismissButton.Content" xml:space="preserve"><value>Stay here</value></data>
+
+  <data name="ShellFocusChipRunningFormat" xml:space="preserve"><value>{0} remaining in the air</value></data>
+  <data name="ShellFocusChipPaused" xml:space="preserve"><value>Paused on the runway</value></data>
+  <data name="ShellFocusChipCompleted" xml:space="preserve"><value>Route completed cleanly</value></data>
+  <data name="ShellFocusChipAbandoned" xml:space="preserve"><value>Route closed before landing</value></data>
+  <data name="ShellFocusChipIdleTitle" xml:space="preserve"><value>No active route</value></data>
+  <data name="ShellFocusChipIdleSubtitle" xml:space="preserve"><value>Pick a destination and launch your next session.</value></data>
+
+  <data name="ReminderStartedTitle" xml:space="preserve"><value>Session departed</value></data>
+  <data name="ReminderStartedBodyFormat" xml:space="preserve"><value>{0} minutes are now reserved for {1}.</value></data>
+  <data name="ReminderMilestoneTitle" xml:space="preserve"><value>Final approach</value></data>
+  <data name="ReminderMilestoneBodyFormat" xml:space="preserve"><value>{0} minutes left on {1}. Keep the cabin quiet.</value></data>
+  <data name="ReminderCompletedTitle" xml:space="preserve"><value>Route complete</value></data>
+  <data name="ReminderCompletedBodyFormat" xml:space="preserve"><value>{0} landed successfully. Your logbook has been updated.</value></data>
+  <data name="ReminderInterruptedTitle" xml:space="preserve"><value>Focus interrupted</value></data>
+  <data name="ReminderInterruptedBodyFormat" xml:space="preserve"><value>{0} is still active. Return to the focus deck when you are ready.</value></data>
+
+  <data name="TagDeepWorkName" xml:space="preserve"><value>Deep Work</value></data>
+  <data name="TagStudySprintName" xml:space="preserve"><value>Study Sprint</value></data>
+  <data name="TagPlanningName" xml:space="preserve"><value>Planning</value></data>
+  <data name="TagCreativeLabName" xml:space="preserve"><value>Creative Lab</value></data>
+  <data name="TagAdminSweepName" xml:space="preserve"><value>Admin Sweep</value></data>
+
+  <data name="RouteDeepWorkLabel" xml:space="preserve"><value>Atlantic Focus Corridor</value></data>
+  <data name="RouteStudySprintLabel" xml:space="preserve"><value>North Campus Climb</value></data>
+  <data name="RoutePlanningLabel" xml:space="preserve"><value>Strategy Holding Pattern</value></data>
+  <data name="RouteCreativeLabLabel" xml:space="preserve"><value>Studio Aurora Loop</value></data>
+  <data name="RouteAdminSweepLabel" xml:space="preserve"><value>Operations Shuttle</value></data>
+
+  <data name="SoundCabinRainName" xml:space="preserve"><value>Cabin Rain</value></data>
+  <data name="SoundCabinRainDescription" xml:space="preserve"><value>Soft rain against the window with a steady cabin hush.</value></data>
+  <data name="SoundJetstreamHumName" xml:space="preserve"><value>Jetstream Hum</value></data>
+  <data name="SoundJetstreamHumDescription" xml:space="preserve"><value>A smooth engine drone for long and even concentration.</value></data>
+  <data name="SoundNightCruiseName" xml:space="preserve"><value>Night Cruise</value></data>
+  <data name="SoundNightCruiseDescription" xml:space="preserve"><value>Low night air, distant cabin noise, and a calm horizon.</value></data>
+  <data name="HomeHeroEyebrow.Text" xml:space="preserve"><value>SkyFocus dashboard</value></data>
+  <data name="HomeLaunchFocusButton.Content" xml:space="preserve"><value>Open focus route</value></data>
+  <data name="HomeTodayMinutesLabel.Text" xml:space="preserve"><value>Minutes focused today</value></data>
+  <data name="HomeTodaySessionsLabel.Text" xml:space="preserve"><value>Completed sessions</value></data>
+  <data name="HomeStreakLabel.Text" xml:space="preserve"><value>Current streak</value></data>
+  <data name="HomeRouteMixTitle.Text" xml:space="preserve"><value>Route mix</value></data>
+  <data name="HomeBadgeTitleLabel.Text" xml:space="preserve"><value>Current badge</value></data>
+  <data name="HomeReadyTitle" xml:space="preserve"><value>Your next flight is waiting</value></data>
+  <data name="HomeReadySubtitle" xml:space="preserve"><value>Choose a route, set the cabin sound, and take off with intention.</value></data>
+  <data name="HomeJourneyRunningFormat" xml:space="preserve"><value>{0} minutes left on {1}.</value></data>
+  <data name="HomeJourneyPaused" xml:space="preserve"><value>Paused at the gate. Resume when the cabin is ready again.</value></data>
+  <data name="HomeTodayMinutesFormat" xml:space="preserve"><value>{0} min</value></data>
+  <data name="HomeTodaySessionsFormat" xml:space="preserve"><value>{0} flights</value></data>
+  <data name="HomeStreakFormat" xml:space="preserve"><value>{0} day streak</value></data>
+
+  <data name="BadgeRookieTitle" xml:space="preserve"><value>Runway Rookie</value></data>
+  <data name="BadgeRookieDescription" xml:space="preserve"><value>You have started the habit. Keep showing up and the route will open up.</value></data>
+  <data name="BadgeCruiserTitle" xml:space="preserve"><value>Cloud Cruiser</value></data>
+  <data name="BadgeCruiserDescription" xml:space="preserve"><value>Three days of solid focus. You are building stable altitude.</value></data>
+  <data name="BadgeNavigatorTitle" xml:space="preserve"><value>Route Navigator</value></data>
+  <data name="BadgeNavigatorDescription" xml:space="preserve"><value>Seven straight days. You are now steering with confidence.</value></data>
+  <data name="BadgeCaptainTitle" xml:space="preserve"><value>Cabin Captain</value></data>
+  <data name="BadgeCaptainDescription" xml:space="preserve"><value>Three full weeks of follow-through. Your focus system is now trusted airspace.</value></data>
+
+  <data name="FocusManifestTitle.Text" xml:space="preserve"><value>Session manifest</value></data>
+  <data name="FocusDurationLabel.Text" xml:space="preserve"><value>Duration preset</value></data>
+  <data name="FocusTagLabel.Text" xml:space="preserve"><value>Route category</value></data>
+  <data name="FocusSoundLabel.Text" xml:space="preserve"><value>Cabin sound</value></data>
+  <data name="FocusControlsTitle.Text" xml:space="preserve"><value>Flight controls</value></data>
+  <data name="FocusStartButton.Content" xml:space="preserve"><value>Start session</value></data>
+  <data name="FocusPauseButton.Content" xml:space="preserve"><value>Pause</value></data>
+  <data name="FocusResumeButton.Content" xml:space="preserve"><value>Resume</value></data>
+  <data name="FocusCompleteButton.Content" xml:space="preserve"><value>Complete</value></data>
+  <data name="FocusAbandonButton.Content" xml:space="preserve"><value>Abandon</value></data>
+  <data name="FocusAmbientPlayingFormat" xml:space="preserve"><value>Now playing: {0}</value></data>
+  <data name="FocusAmbientStoppedLabel" xml:space="preserve"><value>Cabin audio is standing by.</value></data>
+  <data name="FocusNoSoundLabel" xml:space="preserve"><value>No sound selected</value></data>
+  <data name="FocusNoSoundDescription" xml:space="preserve"><value>Select a sound bed if you want an extra layer of cabin atmosphere.</value></data>
+  <data name="FocusReadyRoute" xml:space="preserve"><value>Ready for departure</value></data>
+  <data name="FocusStateIdle" xml:space="preserve"><value>Awaiting launch</value></data>
+  <data name="FocusStateRunning" xml:space="preserve"><value>In the air</value></data>
+  <data name="FocusStatePaused" xml:space="preserve"><value>Holding pattern</value></data>
+  <data name="FocusStateCompleted" xml:space="preserve"><value>Landed</value></data>
+  <data name="FocusStateAbandoned" xml:space="preserve"><value>Route closed</value></data>
+  <data name="FocusManifestFormat" xml:space="preserve"><value>{0} minutes reserved for {1}.</value></data>
+  <data name="FocusProgressIdle" xml:space="preserve"><value>Your route progress will appear here after takeoff.</value></data>
+  <data name="FocusProgressFormat" xml:space="preserve"><value>{0}% complete on {1}.</value></data>
+
+  <data name="HistoryHeroEyebrow.Text" xml:space="preserve"><value>Seven-day flight log</value></data>
+  <data name="HistoryHeroTitle.Text" xml:space="preserve"><value>See how your routes have been landing</value></data>
+  <data name="HistoryHeroSubtitle.Text" xml:space="preserve"><value>Use the logbook to spot consistency, unfinished routes, and where your attention is strongest.</value></data>
+  <data name="HistoryDailyTitle.Text" xml:space="preserve"><value>Daily trend</value></data>
+  <data name="HistoryRecentTitle.Text" xml:space="preserve"><value>Recent sessions</value></data>
+  <data name="HistoryMinutesFormat" xml:space="preserve"><value>{0} min</value></data>
+  <data name="HistorySessionsFormat" xml:space="preserve"><value>{0} completed</value></data>
+  <data name="HistoryCompletionFormat" xml:space="preserve"><value>{0}% completion</value></data>
+  <data name="HistoryStatusCompleted" xml:space="preserve"><value>Completed</value></data>
+  <data name="HistoryStatusPaused" xml:space="preserve"><value>Paused</value></data>
+  <data name="HistoryStatusAbandoned" xml:space="preserve"><value>Abandoned</value></data>
+  <data name="HistoryStatusIdle" xml:space="preserve"><value>Prepared</value></data>
+  <data name="SoundsHeroEyebrow.Text" xml:space="preserve"><value>Ambient library</value></data>
+  <data name="SoundsLibraryTitle.Text" xml:space="preserve"><value>Available sound beds</value></data>
+  <data name="SoundsProfileLabel.Text" xml:space="preserve"><value>Choose a cabin atmosphere</value></data>
+  <data name="SoundsDeckTitle.Text" xml:space="preserve"><value>Playback deck</value></data>
+  <data name="SoundsVolumeLabel.Text" xml:space="preserve"><value>Ambient volume</value></data>
+  <data name="SoundsPlayButton.Content" xml:space="preserve"><value>Play preview</value></data>
+  <data name="SoundsStopButton.Content" xml:space="preserve"><value>Stop audio</value></data>
+  <data name="SoundsPlayingFormat" xml:space="preserve"><value>Previewing {0}</value></data>
+  <data name="SoundsStoppedLabel" xml:space="preserve"><value>No ambient preview is active.</value></data>
+
+  <data name="SettingsHeroEyebrow.Text" xml:space="preserve"><value>Control tower configuration</value></data>
+  <data name="SettingsHeroTitle.Text" xml:space="preserve"><value>Shape the cockpit before takeoff</value></data>
+  <data name="SettingsHeroSubtitle.Text" xml:space="preserve"><value>Choose how strongly SkyFocus should hold the route, and how loudly it should call you back.</value></data>
+  <data name="SettingsDefaultsTitle.Text" xml:space="preserve"><value>Defaults</value></data>
+  <data name="SettingsDefaultMinutesLabel.Text" xml:space="preserve"><value>Default session length</value></data>
+  <data name="SettingsThemeLabel.Text" xml:space="preserve"><value>App theme</value></data>
+  <data name="SettingsBlockerTitle.Text" xml:space="preserve"><value>Soft blocker</value></data>
+  <data name="SettingsSoftBlockerLabel.Text" xml:space="preserve"><value>Enable gentle protection while a session is running.</value></data>
+  <data name="SettingsShieldLabel.Text" xml:space="preserve"><value>Use the focus shield and full-screen takeover for active routes.</value></data>
+  <data name="SettingsTopMostLabel.Text" xml:space="preserve"><value>Keep the window pinned above other apps during a running session.</value></data>
+  <data name="SettingsNotificationsTitle.Text" xml:space="preserve"><value>Notifications</value></data>
+  <data name="SettingsSystemNotificationsLabel.Text" xml:space="preserve"><value>Send Windows notifications for start, final approach, and completion.</value></data>
+  <data name="SettingsFiveMinuteLabel.Text" xml:space="preserve"><value>Announce the final five-minute stretch.</value></data>
+  <data name="SettingsSaveButton.Content" xml:space="preserve"><value>Save settings</value></data>
+  <data name="SettingsRestoreButton.Content" xml:space="preserve"><value>Restore defaults</value></data>
+</root>

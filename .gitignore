@@ -1,0 +1,27 @@
+# Build outputs
+bin/
+obj/
+TestResults/
+artifacts/
+
+# IDE files
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs and temporary diagnostics
+*.log
+buildlog.txt
+xaml.err
+
+# Packaging outputs
+*.appxupload
+*.msix
+*.msixbundle
+*.msixupload
+
+# NuGet local packages
+packages/

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window
+    x:Class="SkyFocus.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:SkyFocus"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:DataType="local:MainWindow">
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="BaseAlt" />
+    </Window.SystemBackdrop>
+
+    <Grid x:Name="RootLayout">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TitleBar x:Name="AppTitleBar" Title="SkyFocus">
+            <TitleBar.IconSource>
+                <ImageIconSource ImageSource="Assets/AppIcon.ico" />
+            </TitleBar.IconSource>
+        </TitleBar>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <InfoBar
+                x:Name="ShellReminderBar"
+                Grid.Row="0"
+                IsOpen="{x:Bind ViewModel.IsReminderVisible, Mode=OneWay}"
+                Severity="{x:Bind ViewModel.ReminderSeverity, Mode=OneWay}"
+                Title="{x:Bind ViewModel.ReminderTitle, Mode=OneWay}"
+                Message="{x:Bind ViewModel.ReminderMessage, Mode=OneWay}"
+                IsClosable="True"
+                CloseButtonClick="OnReminderClosed" />
+
+            <NavigationView
+                x:Name="ShellNavigationView"
+                Grid.Row="1"
+                IsBackEnabled="{x:Bind ViewModel.CanGoBack, Mode=OneWay}"
+                IsSettingsVisible="False"
+                PaneDisplayMode="Left"
+                BackRequested="OnBackRequested"
+                SelectionChanged="OnNavigationSelectionChanged"
+                Content="{x:Bind ViewModel.CurrentPage, Mode=OneWay}">
+                <NavigationView.Header>
+                    <StackPanel Spacing="4">
+                        <TextBlock
+                            Text="{x:Bind ViewModel.CurrentHeaderTitle, Mode=OneWay}"
+                            Style="{StaticResource PageTitleStyle}" />
+                        <TextBlock
+                            Text="{x:Bind ViewModel.CurrentHeaderSubtitle, Mode=OneWay}"
+                            Style="{StaticResource MutedBodyStyle}" />
+                    </StackPanel>
+                </NavigationView.Header>
+
+                <NavigationView.MenuItems>
+                    <NavigationViewItem
+                        x:Name="HomeNavItem"
+                        x:Uid="HomeNavItem"
+                        Tag="home"
+                        AutomationProperties.AutomationId="HomeNavItem"
+                        AutomationProperties.Name="{x:Bind ViewModel.HomeNavAutomationName, Mode=OneWay}">
+                        <NavigationViewItem.Icon>
+                            <SymbolIcon Symbol="Home" />
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                    <NavigationViewItem
+                        x:Name="FocusNavItem"
+                        x:Uid="FocusNavItem"
+                        Tag="focus"
+                        AutomationProperties.AutomationId="FocusNavItem"
+                        AutomationProperties.Name="{x:Bind ViewModel.FocusNavAutomationName, Mode=OneWay}">
+                        <NavigationViewItem.Icon>
+                            <SymbolIcon Symbol="Play" />
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                    <NavigationViewItem
+                        x:Name="HistoryNavItem"
+                        x:Uid="HistoryNavItem"
+                        Tag="history"
+                        AutomationProperties.AutomationId="HistoryNavItem"
+                        AutomationProperties.Name="{x:Bind ViewModel.HistoryNavAutomationName, Mode=OneWay}">
+                        <NavigationViewItem.Icon>
+                            <SymbolIcon Symbol="Document" />
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                    <NavigationViewItem
+                        x:Name="SoundsNavItem"
+                        x:Uid="SoundsNavItem"
+                        Tag="sounds"
+                        AutomationProperties.AutomationId="SoundsNavItem"
+                        AutomationProperties.Name="{x:Bind ViewModel.SoundsNavAutomationName, Mode=OneWay}">
+                        <NavigationViewItem.Icon>
+                            <SymbolIcon Symbol="Audio" />
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                    <NavigationViewItem
+                        x:Name="SettingsNavItem"
+                        x:Uid="SettingsNavItem"
+                        Tag="settings"
+                        AutomationProperties.AutomationId="SettingsNavItem"
+                        AutomationProperties.Name="{x:Bind ViewModel.SettingsNavAutomationName, Mode=OneWay}">
+                        <NavigationViewItem.Icon>
+                            <SymbolIcon Symbol="Setting" />
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                </NavigationView.MenuItems>
+
+                <NavigationView.PaneFooter>
+                    <Border Style="{StaticResource CardSurfaceStyle}">
+                        <StackPanel Spacing="4">
+                            <TextBlock Text="{x:Bind ViewModel.FocusChipTitle, Mode=OneWay}" Style="{StaticResource SectionTitleStyle}" />
+                            <TextBlock Text="{x:Bind ViewModel.FocusChipSubtitle, Mode=OneWay}" Style="{StaticResource MutedBodyStyle}" />
+                        </StackPanel>
+                    </Border>
+                </NavigationView.PaneFooter>
+            </NavigationView>
+
+            <Border
+                x:Name="FocusShield"
+                Grid.RowSpan="2"
+                Background="{ThemeResource LayerFillColorDefaultBrush}"
+                CornerRadius="28"
+                Margin="32"
+                Padding="40"
+                x:Load="{x:Bind ViewModel.IsShieldVisible, Mode=OneWay}">
+                <StackPanel
+                    MaxWidth="420"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Spacing="16">
+                    <FontIcon FontSize="44" Glyph="&#xE709;" HorizontalAlignment="Center" />
+                    <TextBlock Text="{x:Bind ViewModel.ShieldHeadline, Mode=OneWay}" Style="{StaticResource PageTitleStyle}" TextAlignment="Center" />
+                    <TextBlock Text="{x:Bind ViewModel.ShieldMessage, Mode=OneWay}" Style="{StaticResource MutedBodyStyle}" TextAlignment="Center" />
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="12">
+                        <Button
+                            x:Uid="ShieldReturnButton"
+                            AutomationProperties.AutomationId="ShieldReturnButton"
+                            AutomationProperties.Name="{x:Bind ViewModel.ShieldReturnLabel, Mode=OneWay}"
+                            Click="OnReturnToFocusClick"
+                            Style="{StaticResource AccentButtonStyle}" />
+                        <Button
+                            x:Uid="ShieldDismissButton"
+                            AutomationProperties.AutomationId="ShieldDismissButton"
+                            AutomationProperties.Name="{x:Bind ViewModel.ShieldDismissLabel, Mode=OneWay}"
+                            Click="OnDismissShieldClick" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

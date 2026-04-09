@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="SkyFocus.Views.SoundsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:SkyFocus.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:DataType="local:SoundsPage">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="{StaticResource PageOuterMargin}" Spacing="24">
+            <Border Style="{StaticResource HeroCardStyle}">
+                <StackPanel Spacing="12">
+                    <TextBlock x:Uid="SoundsHeroEyebrow" Style="{StaticResource MutedBodyStyle}" />
+                    <TextBlock Text="{x:Bind ViewModel.PlaybackHeadline, Mode=OneWay}" Style="{StaticResource PageTitleStyle}" />
+                    <TextBlock Text="{x:Bind ViewModel.SelectedProfileDescription, Mode=OneWay}" Style="{StaticResource MutedBodyStyle}" />
+                </StackPanel>
+            </Border>
+            <Grid ColumnSpacing="16">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="7*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Style="{StaticResource CardSurfaceStyle}">
+                    <StackPanel Spacing="16">
+                        <TextBlock x:Uid="SoundsLibraryTitle" Style="{StaticResource SectionTitleStyle}" />
+                        <TextBlock x:Uid="SoundsProfileLabel" Style="{StaticResource MutedBodyStyle}" />
+                        <ComboBox ItemsSource="{x:Bind ViewModel.Profiles}" SelectedItem="{x:Bind ViewModel.SelectedProfile, Mode=TwoWay}" DisplayMemberPath="DisplayName" SelectionChanged="OnSelectedProfileChanged" />
+                        <TextBlock Text="{x:Bind ViewModel.SelectedProfileDescription, Mode=OneWay}" Style="{StaticResource MutedBodyStyle}" />
+                    </StackPanel>
+                </Border>
+                <Border Grid.Column="1" Style="{StaticResource CardSurfaceStyle}">
+                    <StackPanel Spacing="16">
+                        <TextBlock x:Uid="SoundsDeckTitle" Style="{StaticResource SectionTitleStyle}" />
+                        <TextBlock x:Uid="SoundsVolumeLabel" Style="{StaticResource MutedBodyStyle}" />
+                        <Slider Minimum="0" Maximum="1" StepFrequency="0.05" Value="{x:Bind ViewModel.Volume, Mode=TwoWay}" ValueChanged="OnVolumeChanged" />
+                        <TextBlock Text="{x:Bind ViewModel.PlaybackHeadline, Mode=OneWay}" Style="{StaticResource MutedBodyStyle}" />
+                        <StackPanel Orientation="Horizontal" Spacing="12">
+                            <Button x:Uid="SoundsPlayButton" Click="OnPlayClick" Style="{StaticResource AccentButtonStyle}" />
+                            <Button x:Uid="SoundsStopButton" Click="OnStopClick" IsEnabled="{x:Bind ViewModel.IsPlaying, Mode=OneWay}" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

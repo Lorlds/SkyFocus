@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SkyFocus (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SkyFocus (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
